@@ -124,9 +124,10 @@ body {
   background-color: var(--accent-color);
   padding: 188px 0px;
   background-image: linear-gradient(
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)
-  ), url(../images/people-office.jpg);
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
   height: 600px;
   max-width: 1440px;
   margin-left: auto;
@@ -238,11 +239,28 @@ body {
   text-align: center;
   padding: 32px 0px;
 }
+.customers {
+  padding: 120px 0px;
+}
+.customer-list {
+  display: flex;
+  margin-top: 72px;
+  gap: 24px;
+}
+.customer-logo {
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
 /* FOOTER */
 
 .footer {
   background-color: var(--accent-color);
   padding: 100px 0px;
+}
+.footer-block {
+  display: flex;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -262,6 +280,18 @@ body {
   letter-spacing: 0.02em;
   color: var(--disable-btn-color);
 }
+
+.social-media {
+  margin-left: 120px;
+}
+.footer-title{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--nav-background-color);
+}
+
 
 /* PORTFOLIO */
 
