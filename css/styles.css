@@ -161,11 +161,24 @@ body {
 .hero-button:hover,
 .hero-button:focus {
   background: var(--enable-btn-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .advantages {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+.advantages-pages {
+  margin-bottom: 8px;
+  width: 264px;
+  height: 112px;
+  background-color: var(--secondary-background-color);
+  border-radius: 4px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
 .advantages-list {
   display: flex;
   list-style: none;
@@ -231,7 +244,7 @@ body {
 }
 .position {
   margin-top: 8px;
-  margin-bottom:8px;
+  margin-bottom: 8px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -240,24 +253,28 @@ body {
   text-align: center;
   padding: 32px 0px;
 }
-.social-list{
+.social-list {
   display: flex;
   padding: 0 16px;
   justify-content: center;
-  gap: 36px;
+  gap: 24px;
 }
-.social-item{
+.social-item {
   width: 40px;
   height: 40px;
 }
-.social-link{
+.social-link {
   width: 100%;
   height: 100%;
-  background-color: var(--accent-text-color) ;
+  background-color: var(--accent-text-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--enable-btn-color);
 }
 .customers {
   padding: 120px 0px;
@@ -273,6 +290,26 @@ body {
   border: 1px solid #8e8f99;
   border-radius: 4px;
 }
+.customer-logo:hover,
+.customer-logo:focus {
+  border: 1px solid var(--enable-btn-color);
+}
+.customer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.customer-icon {
+  padding: 16px 32px;
+  width: 100%;
+  height: 100%;
+  fill: #8e8f99;
+}
+.customer-icon:hover,
+.customer-icon:active {
+  fill: var(--enable-btn-color);
+}
+
 /* FOOTER */
 
 .footer {
@@ -304,19 +341,18 @@ body {
 .social-media {
   margin-left: 120px;
 }
-.footer-title{
-  margin-bottom:16px ;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: var(--nav-background-color);
+.footer-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--nav-background-color);
 }
-.footer-social-list{
+.footer-social-list {
   display: flex;
   justify-content: center;
   gap: 16px;
-
 }
 .footer-social-item {
   width: 40px;
@@ -333,7 +369,7 @@ color: var(--nav-background-color);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
-  background-color: #31D0AA;
+  background-color: #31d0aa;
 }
 
 /* PORTFOLIO */
@@ -381,6 +417,11 @@ color: var(--nav-background-color);
   width: calc((100% - 48px) / 3);
   margin-right: 24px;
   margin-bottom: 48px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.project-card:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .project-card:nth-child(3n) {
   margin-right: 0px;
