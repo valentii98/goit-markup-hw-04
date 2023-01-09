@@ -282,20 +282,15 @@ body {
   margin-top: 72px;
   gap: 24px;
 }
-.customer-logo {
+.customer-link {
   width: 168px;
   height: 88px;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-}
-.customer-logo:hover,
-.customer-logo:focus {
-  border: 1px solid var(--enable-btn-color);
-}
-.customer-link {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+
 }
 .customer-icon {
   padding: 16px 32px;
@@ -303,9 +298,15 @@ body {
   height: 100%;
   fill: #8e8f99;
 }
-.customer-icon:hover,
-.customer-icon:focus {
+.customer-link:hover,
+.customer-link:focus{
+
+  border: 1px solid var(--enable-btn-color);
+}
+.customer-link:hover .customer-icon,
+.customer-link:focus .customer-icon{
   fill: var(--enable-btn-color);
+
 }
 /* FOOTER */
 
